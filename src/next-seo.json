@@ -1,13 +1,9 @@
 {
-  "title": "",
-  "titleTemplate": "",
-  "description": "",
+  "title": "Preact-tailwind-nextjs-example",
+  "titleTemplate": "%s | Preact-tailwind-nextjs-example",
+  "description": "This is a great description",
   "favicon": "/favicon.ico",
   "additionalMetaTags": [
-    {
-      "property": "",
-      "content": ""
-    },
     {
       "property": "",
       "content": ""
@@ -15,9 +11,9 @@
   ],
   "openGraph": {
     "type": "website",
-    "site_name": "",
+    "site_name": "Preact-tailwind-nextjs-example",
     "profile": {
-      "firstName": ""
+      "firstName": "benben"
     },
     "images": [
       {
