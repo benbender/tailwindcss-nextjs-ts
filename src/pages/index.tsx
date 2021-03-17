@@ -1,18 +1,9 @@
 import { NextPage } from "next";
-import Head from "next/head";
 import styles from "assets/css/Home.module.css";
+import { ReactComponent as VercelIcon } from "assets/svg/vercel.svg";
 
 const HomePage: NextPage = () => (
   <div className="container flex flex-col items-center justify-center min-h-screen">
-    <Head>
-      <title>Create Next App</title>
-      <link rel="icon" href="/favicon.ico" />
-      <meta
-        name="description"
-        content="This is an example of a meta description. This will often show up in search results."
-      />
-    </Head>
-
     <main className="flex flex-1 flex-col items-center justify-center">
       <h1 className="mb-8 text-center text-6xl font-black tracking-wider">
         Welcome to <a href="https://nextjs.org">Next.js!</a>
@@ -58,14 +49,7 @@ const HomePage: NextPage = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        Powered by{" "}
-        <img
-          src="/vercel.svg"
-          alt="Vercel Logo"
-          width="70"
-          height="16"
-          className={styles.logo}
-        />
+        Powered by <VercelIcon aria-label="Vercel Logo" className="w-16 h-4" />
       </a>
     </footer>
   </div>
