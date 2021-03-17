@@ -2,31 +2,31 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node: true
+    node: true,
   },
   extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:import/typescript',
-    'plugin:prettier/recommended',
-    'plugin:promise/recommended',
-    'plugin:react/recommended',
-    'plugin:no-unsanitized/DOM',
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-    'plugin:jsx-a11y/recommended',
-    'plugin:@next/next/recommended',
-    'prettier'
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended",
+    "plugin:promise/recommended",
+    "plugin:react/recommended",
+    "plugin:no-unsanitized/DOM",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:@next/next/recommended",
+    "prettier",
   ],
-  parser: '@typescript-eslint/parser',
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: 12,
-    sourceType: 'module'
+    sourceType: "module",
   },
   plugins: [
     "react",
@@ -37,20 +37,20 @@ module.exports = {
   ],
   settings: {
     react: {
-      version: 'detect'
+      version: "detect",
     },
-    'import/resolver': {
+    "import/resolver": {
       node: {
-        paths: ['.', 'src']
-      }
-    }
+        paths: [".", "src"],
+      },
+    },
   },
   rules: {
-    'prettier/prettier': 'error', // Let prettier rule our formatting
-    'import/no-anonymous-default-export': 'error', // For named React components
-    'react/prop-types': 'off', // Ignore prop-types as we are using typescript
-    'react/react-in-jsx-scope': 'off', // React is always in scope with Next.js
-    'jsx-a11y/anchor-is-valid': 'off' // Doesn't play well with next/link
+    "prettier/prettier": "error", // Let prettier rule our formatting
+    "import/no-anonymous-default-export": "error", // For named React components
+    "react/prop-types": "off", // Ignore prop-types as we are using typescript
+    "react/react-in-jsx-scope": "off", // React is always in scope with Next.js
+    "jsx-a11y/anchor-is-valid": "off", // Doesn't play well with next/link
   },
   overrides: [
     {
@@ -81,5 +81,5 @@ module.exports = {
         "import/no-anonymous-default-export": "off",
       },
     },
-  ]
-}
+  ],
+};
